@@ -87,7 +87,10 @@ a {
   text-align: center;
   padding: 4rem 2rem;
   background: var(--main-blue);
+
 }
+
+
 
 .projects-section > h2 {
   max-width: 640px;
@@ -100,14 +103,19 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2rem;
   width: 100%;
-  /* max-width: 1280px; */
   margin: 0 auto;
   margin-bottom: 6rem;
+ 
+}
+
+.project:hover{
+  transform: translateY(-5px);
 }
 
 .project {
   background: var(--main-gray);
   border-radius: 2px;
+  transition: transform 0.3s ease-out;
 }
 
 .code {
@@ -164,7 +172,7 @@ a {
 }
 
 .social-links a {
-    font-size: 4rem;
+  font-size: 4rem;
   display: inline-block;
   padding: 1rem 5rem;
   color: #fff;
@@ -178,4 +186,29 @@ a {
 .contact-details:hover {
   transform: translateY(8px);
   text-shadow: 0 0 5px #ccc, 0 0 10px #ccc, 0 0 15px #ccc, 0 0 20px #c6e3f3, 0 0 30px #c6e3f3, 0 0 40px #c6e3f3, 0 0 55px #c6e3f3, 0 0 75px #c6e3f3, 2px 2px 2px rgba(85, 225, 230, 0.979);
+}
+
+@media (max-width:360px){
+  .nav-list {
+    justify-content: space-around; 
+  }
+
+  .nav-list a {
+    padding: 1.5rem;
+  }
+
+  .projects-section {
+   padding: 1rem;
+  }
+
+  .contact-section{
+    padding-top: 3rem;
+  }
+
+  .social-links a {
+    font-size: 2rem;
+    padding: 1rem 5rem;
+   
+  }
+  
 }
