@@ -87,10 +87,7 @@ a {
   text-align: center;
   padding: 4rem 2rem;
   background: var(--main-blue);
-
 }
-
-
 
 .projects-section > h2 {
   max-width: 640px;
@@ -105,10 +102,9 @@ a {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 6rem;
- 
 }
 
-.project:hover{
+.project:hover {
   transform: translateY(-5px);
 }
 
@@ -162,6 +158,7 @@ a {
   font-size: 1.4rem;
 }
 
+/* social media icon  */
 .social-links {
   display: flex;
   justify-content: center;
@@ -185,30 +182,38 @@ a {
 
 .contact-details:hover {
   transform: translateY(8px);
-  text-shadow: 0 0 5px #ccc, 0 0 10px #ccc, 0 0 15px #ccc, 0 0 20px #c6e3f3, 0 0 30px #c6e3f3, 0 0 40px #c6e3f3, 0 0 55px #c6e3f3, 0 0 75px #c6e3f3, 2px 2px 2px rgba(85, 225, 230, 0.979);
+  text-shadow: 0 0 5px #ccc, 0 0 10px #ccc, 0 0 15px #ccc, 0 0 20px #c6e3f3,
+    0 0 30px #c6e3f3, 0 0 40px #c6e3f3, 0 0 55px #c6e3f3, 0 0 75px #c6e3f3,
+    2px 2px 2px rgba(85, 225, 230, 0.979);
 }
 
-@media (max-width:360px){
+/* responsive  */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+  }
   .nav-list {
-    justify-content: space-around; 
+    margin-right: 0;
+    
   }
 
   .nav-list a {
-    padding: 1.5rem;
+    padding: 10px;
   }
 
   .projects-section {
-   padding: 1rem;
+    padding: 1rem;
   }
 
-  .contact-section{
-    padding-top: 3rem;
+  .contact-section {
+    padding-top: 1rem;
   }
 
   .social-links a {
     font-size: 2rem;
     padding: 1rem 5rem;
-   
   }
-  
 }
